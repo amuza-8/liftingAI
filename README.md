@@ -11,6 +11,7 @@ yが4の位置に天井がありそこに当たると跳ね返る。
 
 yが0を下回ると初期位置から再スタートされる。
 
+
 •action space
 
 [v(float),left(float),right(float),l_force(float),r_force(float)]
@@ -24,6 +25,7 @@ right：右足を振るかどうか(1 if right > 0.8 else 0)
 l_force：左足の力
 
 r_force：右足の力
+
 
 •observation space
 
@@ -39,8 +41,10 @@ ball_vx：ballのx軸方向の速度
 
 ball_vy：ballのy軸方向の速度
 
+
 •描画
 matplotlib
+
 
 # 結果
 •episodeが10ぐらいでballから逃げるようになる。
@@ -56,6 +60,7 @@ matplotlib
 →ballを蹴り上げたり、ヘディングすると報酬を与えているが、ballに触れていない時の報酬の与え方をもう少し工夫しないといけない
 
 →シンプルに学習させるactionが難しい(→足を振るタイミングも学習してほしかったために、振るタイミングを決めるactionを入れているが、難しすぎるのかもしれない)
+
 
 •描画がおかしい時がある。
 
